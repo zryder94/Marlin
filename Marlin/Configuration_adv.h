@@ -807,7 +807,7 @@
  * Note: HOTEND_OFFSET and CALIBRATION_OBJECT_CENTER must be set to within
  *       ±5mm of true values for G425 to succeed.
  */
-//#define CALIBRATION_GCODE
+#define CALIBRATION_GCODE
 #if ENABLED(CALIBRATION_GCODE)
 
   #define CALIBRATION_MEASUREMENT_RESOLUTION     0.01 // mm
@@ -821,7 +821,7 @@
   #define CALIBRATION_NOZZLE_OUTER_DIAMETER      2.0  // mm
 
   // Uncomment to enable reporting (required for "G425 V", but consumes PROGMEM).
-  //#define CALIBRATION_REPORTING
+  #define CALIBRATION_REPORTING
 
   // The true location and dimension the cube/bolt/washer on the bed.
   #define CALIBRATION_OBJECT_CENTER     { 264.0, -22.0,  -2.0 } // mm
