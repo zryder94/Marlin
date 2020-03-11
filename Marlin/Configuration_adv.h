@@ -694,7 +694,7 @@
    *
    */
   #ifndef Z_STEPPER_ALIGN_XY
-    //#define Z_STEPPERS_ORIENTATION 0
+    #define Z_STEPPERS_ORIENTATION 1
   #endif
 
   // Provide Z stepper positions for more rapid convergence in bed alignment.
@@ -1540,10 +1540,10 @@
 
 #if EITHER(MESH_BED_LEVELING, AUTO_BED_LEVELING_UBL)
   // Override the mesh area if the automatic (max) area is too large
-  #define MESH_MIN_X 5 //MESH_INSET
-  //#define MESH_MIN_Y 15 //MESH_INSET
+  #define MESH_MIN_X 35 //MESH_INSET
+  #define MESH_MIN_Y 5 //MESH_INSET
   #define MESH_MAX_X X_BED_SIZE - 5
-  //#define MESH_MAX_Y Y_BED_SIZE - (15)
+  #define MESH_MAX_Y Y_BED_SIZE - (5)
 #endif
 
 /**

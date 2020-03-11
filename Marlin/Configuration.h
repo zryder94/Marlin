@@ -485,9 +485,9 @@
                                   // is more than PID_FUNCTIONAL_RANGE then the PID will be shut off and the heater will be set to min/max.
 
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
-#define DEFAULT_Kp 15.87
-#define DEFAULT_Ki 1.12
-#define DEFAULT_Kd 56.23
+#define DEFAULT_Kp 15.00
+#define DEFAULT_Ki 1.05
+#define DEFAULT_Kd 53.45
   // Ultimaker
   //#define DEFAULT_Kp 22.2
   //#define DEFAULT_Ki 1.08
@@ -539,9 +539,9 @@
   //#define PID_BED_DEBUG // Sends debug data to the serial port.
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
-  #define DEFAULT_bedKp 47.71
-  #define DEFAULT_bedKi 1.89
-  #define DEFAULT_bedKd 802.54
+  #define DEFAULT_bedKp 90.71
+  #define DEFAULT_bedKi 4.16
+  #define DEFAULT_bedKd 1317.69
 #endif // PIDTEMPBED
 
 // @section extruder
@@ -986,7 +986,7 @@
 #define Z_CLEARANCE_DEPLOY_PROBE   10 // Z Clearance for Deploy/Stow
 #define Z_CLEARANCE_BETWEEN_PROBES  5 // Z Clearance between probe points
 #define Z_CLEARANCE_MULTI_PROBE     5 // Z Clearance between multiple probes
-//#define Z_AFTER_PROBING           5 // Z position after probing is done
+#define Z_AFTER_PROBING           5 // Z position after probing is done
 
 #define Z_PROBE_LOW_POINT          -3 // Farthest distance below the trigger-point to go before stopping
 
@@ -1269,7 +1269,7 @@
 
   //#define MESH_EDIT_GFX_OVERLAY   // Display a graphics overlay while editing the mesh
 
-  #define MESH_INSET 15              // Set Mesh bounds as an inset region of the bed
+  #define MESH_INSET 5              // Set Mesh bounds as an inset region of the bed
   #define GRID_MAX_POINTS_X 10      // Don't use more than 15 points per axis, implementation limited.
   #define GRID_MAX_POINTS_Y GRID_MAX_POINTS_X
 
