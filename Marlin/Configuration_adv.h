@@ -1507,11 +1507,11 @@
  */
 #if EITHER(AUTO_BED_LEVELING_3POINT, AUTO_BED_LEVELING_UBL)
   #define PROBE_PT_1_X 35
-  #define PROBE_PT_1_Y 15
+  #define PROBE_PT_1_Y 10
   #define PROBE_PT_2_X 195
-  #define PROBE_PT_2_Y 15
-  #define PROBE_PT_3_X 80
-  #define PROBE_PT_3_Y 245
+  #define PROBE_PT_2_Y 10
+  #define PROBE_PT_3_X 115
+  #define PROBE_PT_3_Y 220
 #endif
 
 /**
@@ -1540,10 +1540,10 @@
 
 #if EITHER(MESH_BED_LEVELING, AUTO_BED_LEVELING_UBL)
   // Override the mesh area if the automatic (max) area is too large
-  #define MESH_MIN_X 35 //MESH_INSET
-  #define MESH_MIN_Y 5 //MESH_INSET
-  #define MESH_MAX_X X_BED_SIZE - 5
-  #define MESH_MAX_Y Y_BED_SIZE - (5)
+  //#define MESH_MIN_X 35 //MESH_INSET
+  //#define MESH_MIN_Y 5 //MESH_INSET
+  //#define MESH_MAX_X X_BED_SIZE - 5
+  //#define MESH_MAX_Y Y_BED_SIZE - (5)
 #endif
 
 /**
